@@ -4,16 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"/>
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
     <div class="menu_bar">
         <a href="#">
-            <div class="logo-image">
+            <!-- <div class="logo-image">
                 <img src="logo1-removebg-preview.png" height="60" alt="logo">
-            </div>
+            </div> -->
             <div class="logo-text">
                 <h1 class="logo">Large<span>Pdf</span></h1>
             </div>
@@ -35,19 +36,86 @@
 
         </ul>
     </div>
-    <div class="Upload-file">
-        <div class="upload-File-text">
-            <form action="uploading.php" method="POST" 
-            enctype="multipart/form-data">
-        <h4>Browse your file</h4>
-            <input type="file" name="uploadfile" /> <br><br>
-            <input type="submit" value="Upload File"/>
-        </form>
-        </div>
-
-    </div>
-
-
+        <div class="body1">
+            <div class="wrapper">
+                <header>browse your file</header>
+                <form action="#" method="POST" enctype="multipart/form-data">
+                    <i class="fas fa-cloud-upload-alt"></i>
+                    <p>Browse file to upload</p>
+                </form> 
+                <section class="progress-area">
+                    <li class="row">
+                        <i class="fas fa-file-alt"></i>
+                        <div class="content">
+                            <div class="details">
+                                <span class="name">image_01.png . Uploading</span>
+                                <span class="prcent">50%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress"></div>
+                            </div>
+                        </div>
+                    </li>
+                </section>
+                <section class="uploaded-area">
+                    <li class="row">
+                        <div class="content">
+                            <i class="fas fa-file-alt"></i>
+                            <div class="details">
+                                <span class="name">image_01.png . Uploaded</span>
+                                <span class="size">70 KB</span>
+                            </div>    
+                        </div>
+                        <i class="fas fa-check"></i>
+                    </li>
+                    <li class="row">
+                        <div class="content">
+                            <i class="fas fa-file-alt"></i>
+                            <div class="details">
+                                <span class="name">image_01.png . Uploaded</span>
+                                <span class="size">70 KB</span>
+                            </div>    
+                        </div>
+                        <i class="fas fa-check"></i>
+                    </li>
+                    <li class="row">
+                        <div class="content">
+                            <i class="fas fa-file-alt"></i>
+                            <div class="details">
+                                <span class="name">image_01.png . Uploaded</span>
+                                <span class="size">70 KB</span>
+                            </div>    
+                        </div>
+                        <i class="fas fa-check"></i>
+                    </li>
+                    <li class="row">
+                        <div class="content">
+                            <i class="fas fa-file-alt"></i>
+                            <div class="details">
+                                <span class="name">image_01.png . Uploaded</span>
+                                <span class="size">70 KB</span>
+                            </div>    
+                        </div>
+                        <i class="fas fa-check"></i>
+                    </li>
+                </section>
     
+            </div>
+        </div>
+    
+
+
+ 
 </body>
 </html>
+<!-- <form action="uploading.php" method="POST" 
+enctype="multipart/form-data">
+<h4>Browse your file</h4>
+<input type="file" name="uploadfile" /> <br><br>
+<input type="submit" value="Upload File"/>
+</form> -->
+<!-- 
+display: flex;
+align-items: center;
+justify-content: center;
+min-height: 100vh; -->
